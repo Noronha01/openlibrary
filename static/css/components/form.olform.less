@@ -69,9 +69,32 @@
       text-align: center;
     }
 
+    .mia__to_top, .mia__to_bottom {
+      text-decoration: none;
+      padding: 2px;
+      background-color: transparent;
+      border: 1px solid @light-grey;
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: darken(@light-grey, 20%);
+      }
+    }
+
     .mia__remove {
       color: @red;
       text-decoration: none;
+      padding: 4px;
+      background-color: transparent; 
+      border: 1px solid @red; 
+      transition: background-color 0.3s, color 0.3s;
+      cursor: pointer;
+    }
+
+    .mia__remove:hover {
+      background-color: @red;
+      color: white;  
     }
 
     .mia__preview {

@@ -32,6 +32,8 @@ $jsdef render_seed_field(i, seed):
     <li class="mia__input ac-input">
         <div class="seed--controls">
             <div class="mia__reorder mia__index">≡ #$(i + 1)</div>
+            <button class="mia__to_top" type="button">To top</button>
+            <button class="mia__to_bottom" type="button">To bottom</button>
             <button class="mia__remove" type="button">Remove</button>
         </div>
         <main>
@@ -132,8 +134,8 @@ $jsdef lazy_thing_preview(key, render_fn_name):
                     $:render_seed_field(i, seed)
             $else:
                 $:render_seed_field(0, {'key': ''})
-            <a href="javascript:;" class="mia__add">$_('Add another book')</a>
         </ol>
+        <a href="javascript:;" class="mia__add">$_('Add another book')</a>
 
         <hr />
 
